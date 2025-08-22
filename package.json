@@ -1,0 +1,30 @@
+{
+  "name": "mcnc-rag-mcp-installer",
+  "version": "1.0.0",
+  "description": "Cross-platform installer for MCNC RAG MCP Server",
+  "type": "module",
+  "main": "install.js",
+  "bin": {
+    "mcnc-rag-install": "./install.js"
+  },
+  "scripts": {
+    "install": "node install.js"
+  },
+  "keywords": [
+    "mcnc",
+    "mcp",
+    "claude",
+    "installer",
+    "cross-platform"
+  ],
+  "author": "MCNC",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mcnc-bizmob/mcnc-rag-mcp-installer"
+  },
+  "homepage": "https://github.com/mcnc-bizmob/mcnc-rag-mcp-installer#readme"
+}
