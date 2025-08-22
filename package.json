@@ -4,7 +4,7 @@
   "description": "Cross-platform installer for MCNC RAG MCP Server",
   "main": "install.js",
   "bin": {
-    "mcnc-rag-install": "./install.js"
+    "mcnc-rag-mcp-installer": "./install.js"
   },
   "scripts": {
     "install": "node install.js"
@@ -25,5 +25,9 @@
     "type": "git",
     "url": "https://github.com/mcnc-bizmob/mcnc-rag-mcp-installer"
   },
-  "homepage": "https://github.com/mcnc-bizmob/mcnc-rag-mcp-installer#readme"
+  "homepage": "https://github.com/mcnc-bizmob/mcnc-rag-mcp-installer#readme",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
 }
