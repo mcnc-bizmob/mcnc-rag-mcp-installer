@@ -2,6 +2,7 @@
   "name": "mcnc-rag-mcp-installer",
   "version": "1.0.0",
   "description": "Cross-platform installer for MCNC RAG MCP Server",
+  "type": "module",
   "main": "install.js",
   "bin": {
     "mcnc-rag-mcp-installer": "./install.js"
