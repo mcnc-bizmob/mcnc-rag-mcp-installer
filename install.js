@@ -340,5 +340,8 @@ async function main() {
 
 // 스크립트 실행
 if (require.main === module) {
-  main();
+  main().catch(console.error);
+} else {
+  // 파이프로 실행될 때도 실행
+  main().catch(console.error);
 }
