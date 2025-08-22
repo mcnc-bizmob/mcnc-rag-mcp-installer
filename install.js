@@ -5,11 +5,11 @@
  * Windows, macOS, Linux 모두 지원
  */
 
-import { execSync, spawn } from 'child_process';
-import { readFileSync, writeFileSync, existsSync } from 'fs';
-import { homedir, platform } from 'os';
-import { join } from 'path';
-import readline from 'readline';
+const { execSync, spawn } = require('child_process');
+const { readFileSync, writeFileSync, existsSync } = require('fs');
+const { homedir, platform } = require('os');
+const { join } = require('path');
+const readline = require('readline');
 
 const PACKAGE_NAME = '@mcnc-bizmob/mcnc-rag-mcp-server';
 const GITHUB_TOKEN = ['ghp_', 'DOe4t9VKknC6RYEundVrqcEluG', 'IvKo3s2WLK'].join(''); // 읽기 전용 설치 토큰
@@ -339,6 +339,6 @@ async function main() {
 }
 
 // 스크립트 실행
-if (import.meta.url === `file://${process.argv[1]}`) {
+if (require.main === module) {
   main();
 }
